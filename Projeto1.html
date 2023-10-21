@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto1</title>
+    <link rel="stylesheet" href="Projeto1.css">
+    
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora</h1>
+        <div class="display">
+            <input type="text" id="result" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button id="clear" onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+    <p id="project-description">
+        Este é um projeto de calculadora web simples.
+    </p>
+</div>
+<script>
+    let currentInput = '';
+
+    function appendToDisplay(value) {
+        currentInput += value;
+        document.getElementById('result').value = currentInput;
+    }
+
+    function clearDisplay() {
+        currentInput = '';
+        document.getElementById('result').value = currentInput;
+    }
+
+    function calculateResult() {
+        try {
+            currentInput = eval(currentInput).toString();
+            document.getElementById('result').value = currentInput;
+        } catch (error) {
+            document.getElementById('result').value = 'Erro';
+        }
+    }
+</script>
+</body>
+</html>

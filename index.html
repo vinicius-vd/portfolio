@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfólioPessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="imagem/favicon.png" type="image/x-icon">
+</head>
+<body>
+       <!-- Container principal -->
+    <div class="container">
+        <div class="menu">
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </div>
+            <!-- Está é a seção de início com nome e foto -->
+        <div class="section" id="inicio">
+            <div class="profile">
+                <h1>Vinicius dos santos lima</h1>
+                <img src="imagem.png" alt="Minha Foto" class="profile-image">
+            </div>
+        </div>
+                 <!-- Seção "Sobre Mim" -->
+        <div class="section" id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Nome: Vinicius dos santos lima,
+
+              Idade 24 anos,
+              
+              Profissão: Atualmente apenas estudando,mais já trabalhei como jovem aprendiz de administração.
+              
+              História de Vida: Moro em Brasília! Cidade Samambaia norte. Meu passa tempo é estudar tecnologia, atualmente estou em busca de oportunidades de trabalho para adquirir conhecimentos.</p>
+        </div>
+               <!-- Seção "Formação" -->
+        <div class="section" id="formacao">
+            <h2>Formação</h2>
+            <p>Atualmente estudando Análise e Desenvolvimento de Sistemas(GRADUAÇÃO) Centro Universitário Internacional UNINTER.</p>
+        </div>
+
+        <div class="section" id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Alguns projetos que fiz: <a href="Projeto1.html">Projeto1</a>
+                <a href="Projeto2.html">Projeto2</a>
+                <a href="Projeto3.html">Projeto3</a>
+                <a href="Projeto4.html">Projeto4</a></p>
+        </div>
+                <!-- Está é a seção "Contato" com formulário contendo as informações que deve colocar-->
+        <div class="section" id="contato">
+            <h2>Contato</h2>
+            <form class="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+ body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #222; /* Fundo mais escuro */
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente para conteúdo */
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor semitransparente para o menu */
+  color: white;
+  padding: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  background-color: #618faa; /* Cor de fundo para os links do menu */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor semitransparente para seções */
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: white;
+  background-color: #6b5858; /* Cor de fundo para títulos */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+img.profile-image {
+  max-width: 100%;
+  border-radius: 50%; margin-top: 10px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.contact-form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #373838; /* Cor de fundo mais escura para o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #666; /* Borda para os campos de entrada */
+    border-radius: 5px;
+    background-color: #444; /* Cor de fundo para os campos de entrada */
+    color: white;
+}
+
+form input[type="submit"] {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container, .section {
+    margin-bottom: 20px;
+}

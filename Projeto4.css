@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a19494;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dbcccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #777;
+}
+
+.explicacao {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #555;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4285f4;
+}
+
+.item h3 {
+    font-size: 18px;
+}
+
+p, li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.item ul {
+    padding-left: 20px;
+}
